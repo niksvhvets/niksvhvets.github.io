@@ -11,7 +11,8 @@ img {
 header {
     padding-top: 59px;
     padding-bottom: 22px;
-    background-color: #3a7dfd;
+   /*background-color: #3afdac;*/
+   background-image: url(../img/bg-logo.png);
     color: #fff;
 }
 
@@ -32,9 +33,9 @@ header {
 
 .header-button  {
     display: inline-block;
-    box-shadow: 10px 17px 34px 6px rgba(18, 61, 145, 0.83);
+    /*box-shadow: 10px 17px 34px 6px rgba(18, 61, 145, 0.83);*/
     border-radius: 50px;
-    border: 0;
+    border: 1px solid #fff;
     background-color: #ffffff;
     color: #072b6f;
     font-size: 18px;
@@ -46,6 +47,8 @@ header {
 .header-button:hover {
     box-shadow: none;
     cursor: pointer;
+    background-color: transparent;
+    color: #fff;
 }
 
 header small {
@@ -121,7 +124,7 @@ header small {
 }
 
 footer {
-    background-color: #3a7dfd;
+    background-color: #34383f;
     color: #fff;
     padding-top: 60px;
     padding-bottom: 110px;
