@@ -69,7 +69,7 @@ class Slider extends React.Component {
     prevOne () {
         (this.state.active > 0) ? 
         this.setState({
-            active: this.state.active --
+            active: this.state.active--
         }) :
         this.setState({
             active: this.state.max - 1
