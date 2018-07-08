@@ -25,7 +25,7 @@ const LinghtText = styled.div`
     margin-top: 54px;
 `
 
-const CallBtn = styled.div`
+const CallBtn = styled.button`
     width: 247px;
     height: 67px;
     background-color: #ffa14b;
