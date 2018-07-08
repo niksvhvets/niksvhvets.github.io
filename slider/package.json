@@ -1,5 +1,4 @@
 {
-  "homepage": "https://niksvhvets.github.io/tree/master/slider",
   "name": "slider",
   "version": "0.1.0",
   "private": true,
@@ -15,5 +14,6 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  }
+  },
+  "homepage": "https://niksvhvets.github.io/slider"
 }
