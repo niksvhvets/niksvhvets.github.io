@@ -373,7 +373,7 @@ ul {
 }
 
 .project ul {
-    padding-left: 30px;
+    padding-left: 50px;
     padding-right: 10px;
     list-style: initial;
 }
@@ -391,6 +391,15 @@ ul {
     background: rgb(100%, 100%, 100%, 0.7);
 }
 
+.overlay h3 {
+    color: #4f4f6f;
+    font-size: 22px;;
+}
+
+.overlay ul {
+    font-weight: 700;
+}
+
 .overlay:hover {
     background: rgb(100%, 100%, 100%, 0.8);
     transition: 0.4s;
@@ -406,46 +415,109 @@ ul {
 .first {
     background-image: url('../img/gos.jpg');
     background-size: cover;
+    filter: grayscale(100%); 
+}
+
+.first:hover {
+    background-image: url('../img/gos.jpg');
+    background-size: cover;
+    filter: grayscale(0%); 
 }
 
 .second {
     background-image: url('../img/kom.jpg');
     background-size: cover;
+    filter: grayscale(100%); 
+}
+
+.second:hover {
+    background-image: url('../img/kom.jpg');
+    background-size: cover;
+    filter: grayscale(0%); 
 }
 
 .third {
     background-image: url('../img/zav.jpg');
     background-size: cover;
+    filter: grayscale(100%); 
+}
+
+.third:hover {
+    background-image: url('../img/zav.jpg');
+    background-size: cover;
+    filter: grayscale(0%); 
 }
 
 .fourth {
     background-image: url('../img/sud.jpg');
     background-size: cover;
+    filter: grayscale(100%); 
+}
+
+.fourth:hover {
+    background-image: url('../img/sud.jpg');
+    background-size: cover;
+    filter: grayscale(0%); 
 }
 
 .fifth {
     background-image: url('../img/tc.jpg');
     background-size: cover;
+    filter: grayscale(100%); 
+}
+
+.fifth:hover {
+    background-image: url('../img/tc.jpg');
+    background-size: cover;
+    filter: grayscale(0%); 
 }
 
 .sixth {
     background-image: url('../img/vyz.jpg');
     background-size: cover;
+    filter: grayscale(100%); 
+}
+
+.sixth:hover {
+    background-image: url('../img/vyz.jpg');
+    background-size: cover;
+    filter: grayscale(0%); 
 }
 
 .seventh {
     background-image: url('../img/fun.jpg');
     background-size: cover;
+    filter: grayscale(100%); 
+}
+
+.seventh:hover {
+    background-image: url('../img/fun.jpg');
+    background-size: cover;
+    filter: grayscale(0%); 
 }
 
 .eighth {
     background-image: url('../img/med.jpg');
     background-size: cover;
+    filter: grayscale(100%); 
+}
+
+.eighth:hover {
+    background-image: url('../img/med.jpg');
+    background-size: cover;
+    filter: grayscale(0%); 
 }
 
 .ninth {
     background-image: url('../img/tpu.jpg');
     background-size: cover;
+    filter: grayscale(100%); 
+}
+
+.ninth:hover {
+    background-image: url('../img/tpu.jpg');
+    background-size: cover;
+    filter: grayscale(0%); 
 }
 
 /*------------------- лицензии -------------------*/
@@ -460,6 +532,45 @@ ul {
     padding: 2.5rem;
 }
 
+.licenses-wrap {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.first-license,
+.second-license,
+.third-license {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 18.69px 2.31px rgba(204, 204, 223, 0.5);
+}
+
+.first-license,
+.second-license {
+    margin-right: 50px;
+}
+
+.first-license img,
+.second-license img,
+.third-license img {
+    width: 500px;
+    height: 700px;
+    
+}
+
+.first-license img:hover,
+.second-license img:hover,
+.third-license img:hover {
+    transform: scale(1.4);
+    transition: 2s;
+}
+
 /*------------------- заказчики -------------------*/
 
 .main-content-customers {
@@ -472,6 +583,36 @@ ul {
     padding: 2.5rem;
 }
 
+.customers-wrap {
+	background-color: white;
+    padding: 2.5rem;
+	display: flex;
+	flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.customers-logo img {
+    max-width: 100%; 
+    max-height: 100%;
+    position: absolute;
+    z-index: 1;
+    margin: auto;
+    top: 0; 
+    right: 0; 
+    bottom: 0; 
+    left: 0;
+}
+
+.customers-logo {
+    position: relative;
+    width: 298px;
+    height: 150px;
+    border: 0px solid black;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
 /*------------------- контакты -------------------*/
 
 .main-content-contancts {
@@ -482,6 +623,18 @@ ul {
     align-items: center;
     justify-content: center;
     padding: 2.5rem;
+}
+
+.contacts-wrap {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;    
+    margin-bottom: 30px;
+}
+
+.map {
+    margin-right: 30px;
 }
 
 /*------------------- footer -------------------*/
