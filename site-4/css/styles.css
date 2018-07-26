@@ -646,5 +646,25 @@ ul {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 2.5rem;
+}
+
+.footer-wrap {
+    display: flex;
+    width: 80%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.footer-cop,
+.footer-created {
+    color: #fff;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.footer-created a {
+    text-decoration: none;
+    color: #fff;
+    border-bottom: 1px dotted #fff;
 }
