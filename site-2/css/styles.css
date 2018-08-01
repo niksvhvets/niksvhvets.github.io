@@ -28,6 +28,10 @@ p {
     margin: 0;
 }
 
+ul {
+    list-style: none;
+}
+
 .header-wrap-content {
     width: 1200px;
     margin: 0 auto;
@@ -243,7 +247,8 @@ p {
     width: 100%;
 }
 
-.content-company-info {
+.content-company-info,
+.content-tolerance-info {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -334,18 +339,21 @@ p {
     justify-content: second baseline;
 }
 
-ul {
+.services-info p,
+.services-info ul {
     list-style: none;
+    font-size: 0.9rem;
+    line-height: 20px;
+    letter-spacing: 0.1rem;
 }
 
 .services-info ul li::before {
     content: '';
     display: inline-block;
     vertical-align: middle;
-	width: 4px;
-	height: 4px;
-	border-right: 5px solid #3bb08f;
-	border-bottom: 5px solid #3bb08f;
+	width: 2px;
+	height: 2px;
+	border: 3px solid #069C51;
 	transform: rotate(45deg);
 	margin-right: 10px;
 }
@@ -601,8 +609,6 @@ ul {
     margin-bottom: 55px;
 }
 
-
-
 .first-license,
 .second-license,
 .third-license {
@@ -631,6 +637,77 @@ ul {
     transform: scale(1.4);
     transition: 2s;
 }
+
+/*------------------- допуски -------------------*/
+
+.main-content-tolerance {
+    background-color: #ffffff;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2.5rem;
+}
+
+.content-tolernace-list ul>ul::before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+	width: 2px;
+	height: 2px;
+	border: 3px solid #069C51;
+	transform: rotate(45deg);
+	margin-right: 10px;
+}
+
+.content-tolernace-list ul li{
+    margin-left: 30px;
+}
+
+.content-tolernace-list ul li::before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+	width: 2px;
+	height: 2px;
+	border: 2px solid #069C51;
+	transform: rotate(45deg);
+	margin-right: 10px;
+}
+
+.content-tolernace-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 1200px;
+}
+
+.tolerance-list-column {
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+}
+
+.column {
+    width: 600px;
+}
+
+
+.tolerance-list-column ul {
+  
+    padding: 0;
+    background: rgba(231, 240, 232, 0.911);
+    padding: 10px;
+    font-size: 0.9rem;
+    line-height: 20px;
+    letter-spacing: 0.1rem;
+}
+
+.tolerance-list-column:not(:last-child) {
+    
+}
+
 
 /*------------------- заказчики -------------------*/
 
@@ -724,7 +801,7 @@ ul {
 
 /*------------------- footer -------------------*/
 
-.footer-content-wrap {
+.footer-content {
     background-color: #069C51;
     
     display: flex;
