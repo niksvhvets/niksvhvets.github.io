@@ -704,11 +704,6 @@ ul {
     letter-spacing: 0.1rem;
 }
 
-.tolerance-list-column:not(:last-child) {
-    
-}
-
-
 /*------------------- заказчики -------------------*/
 
 .main-content-customers {
