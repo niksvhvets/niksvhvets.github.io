@@ -573,29 +573,18 @@
                                 +7 (495) 648 15 77
                             </p>
                         </span>
-                        <form class="contacts-form-feedback" action="#" action="post">
+                        <form class="contacts-form-feedback" id="form">
                             <h4>Оставьте ваши контактные данные и в ближайшее время мы обязательно с вами свяжемся</h4>
                             <label class="input">
-                                <input class="input-name" type="text" name="name" placeholder="ФИО" maxlength="30">
+                                <input class="input-name" type="text" name="name" placeholder="ФИО" maxlength="30" required />
                             </label>
                             <label class="input">
-                                <input class="input-email" type="text" name="email" placeholder="example@axample.ru" maxlength="30">
+                                <input class="input-email" type="text" name="email" placeholder="example@axample.ru" maxlength="30" />
                             </label>
                             <label class="input">
-                                <input class="input-telephone" type="text" name="telephone" placeholder="+7 (123) 456 78 90" maxlength="20">
+                                <input class="input-phone" type="text" name="phone" placeholder="+7 (123) 456 78 90" maxlength="20" required />
                             </label>
-                            <input class="btn-style" type="submit" value="отправить">
-                           
-                           
-                           <!--<div class="form-head">
-                                
-                            </div>
-                            <div class="form-input">
-                                
-                            </div>
-                            <div class="form-btn">
-                                
-                            </div>-->
+                            <button class="btn-style" type="submit" value="">отправить</button>
                         </form>
                     </div>
                 </div>   
@@ -655,7 +644,7 @@
                         <p>2018  ©   ОOO «ПАРИС»</p>
                     </div>
                     <div class="footer-created">
-                        <p>created by <a href="#">Nikita Shvets</a></p>
+                        <p>created by <a href="#">WebMaster</a></p>
                     </div>
                 </div>
             </div>
@@ -663,6 +652,7 @@
     </footer>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/common.js"></script>
     <script src="js/wow.min.js"></script>
 	<script>
 		new WOW().init();
