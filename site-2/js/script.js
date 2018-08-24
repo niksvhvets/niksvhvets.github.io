@@ -17,5 +17,11 @@ $(document).ready(function(){
             top = $(id).offset().top;
         $('body,html').animate({scrollTop: top}, 1500);
     });
+
+    $('.panel-heading').click(function () {
+        $(this).toggleClass('in').next().slideToggle();
+        $('.panel-heading').not(this).removeClass('in').next().slideUp();
+    });
+
 });
 
