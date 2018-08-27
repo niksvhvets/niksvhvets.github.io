@@ -709,6 +709,17 @@ ul {
     padding: 10px 40px 10px 15px;
 }
 
+.panel-heading:hover {
+    background-color: #069C51;
+    transition: 0.4s;
+}
+
+.panel-heading a:focus {
+    background-color: #069C51;
+    transition: 0.7s;
+    color: #fff;
+}
+
 .panel-heading a::after {
     content:"\f078";
     font-family: "FontAwesome";
