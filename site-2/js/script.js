@@ -22,6 +22,6 @@ $(document).ready(function(){
         $(this).toggleClass('in').next().slideToggle();
         $('.panel-heading').not(this).removeClass('in').next().slideUp();
     });
-
+    
 });
-
+   
