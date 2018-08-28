@@ -7,6 +7,7 @@
 body {
     font-family: 'Roboto', 'Arimo', 'Raleway', sans-serif;
     margin: 0;
+    letter-spacing: 0.08rem;
 }
 
 h1 {
@@ -64,10 +65,16 @@ ul {
     align-items: center;
 }
 
-.contact-telephone,
-.header-emai {
+.contact-telephone {
     display: flex;
     align-items: center;
+}
+
+
+.header-email .fa,
+.contact-telephone .fa {
+    color: #069C51;
+    margin-right: 5px;
 }
 
 .contact-telephone span,
@@ -702,15 +709,15 @@ ul {
 .panel-heading a {
     width: 1180px;
     position: relative;
-    background: rgba(231, 240, 232, 0.911);
+    background: #f7f7f7;
     color: #3b3939;
     
     text-decoration: none;
     padding: 10px 40px 10px 15px;
 }
 
-.panel-heading:hover {
-    background-color: #069C51;
+.panel-heading a:hover {
+    background-color: rgba(231, 240, 232, 0.911);
     transition: 0.4s;
 }
 
@@ -820,41 +827,42 @@ ul {
 .contacts-wrap {
     display: flex;
     justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;    
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
     margin-bottom: 30px;
 }
 
 .contacts-info {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    width: 295px;
 }
 
-.contacts-info:nth-child(2) svg {
-    margin-right: 33px;
-}
-
-.contacts-info svg {
-    margin-right: 40px;
+.contacts-info .fa {
+    margin-bottom: 10px;
+    color: #069C51;
+    
 }
 
 .map {
-    width: 690px;
-    height: 650px;
-    margin-right: 30px;
+    margin-bottom: 10px;
 }
 
 .tel {
+    
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
-    width: 460px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
 }
 
 .tel p {
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .contacts-line {
@@ -866,9 +874,25 @@ ul {
     background-color: rgba(231, 240, 232, 0.911);
 }
 
+.contacts-form {
+    text-align: center;
+    font-weight: 300;
+    border-top: 4px solid #069C51;
+    background-color: #f7f7f7;
+    padding: 50px 10px;
+    width: 100%;
+}
+
+.contacts-form h4 {
+    margin-top: 0;
+    letter-spacing: 0.08rem;
+}
+
 .contacts-form-feedback {
     display: flex;
     flex-direction: column;
+    width: 500px;
+    margin: 0 auto;
 }
 
 .contacts-form-feedback h4 {
@@ -879,27 +903,29 @@ ul {
 
 .input {
     width: 100%;
-    margin: 10px 0;
+    
+    padding: 11px 10px 10px 25px;
 }
 
 .input-name,
 .input-email,
-.input-phone {
+.input-phone,
+.btn-style {
     width: 100%;
-    padding: 10px;
-    border: 2px solid #069C51;
+    padding: 15px 25px 15px 25px;
+    border: 1px solid #e8e8e8;
+    font-size: 14px;
 }
 
 .btn-style {
-    width: 100%;
-    margin-top: 10px;
-    padding: 10px;
-    background: rgba(231, 240, 232, 0.911);
-    font-weight: normal;
-    font-size: 20px;
-    color: #069C51;
-    text-decoration: none;
-    border: 2px solid #069C51;
+    margin-top: 15px;
+    padding: 0;
+    height: 70px;
+    font-weight: 500;
+    font-size: 22px;
+    background-color: #069C51;
+    color: #fff;
+    margin: 0 auto;
 }
 
 .btn-style:hover {
@@ -913,13 +939,14 @@ ul {
 /*------------------- footer -------------------*/
 
 .footer-content {
-    background-color: #069C51;
-    
+    background-color: #40464b;
+  
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 20px 0;
+    margin: 0 auto;  
 }
 
 .footer-wrap {
@@ -958,8 +985,6 @@ ul {
 
 .footer-menu ul li a {
     text-decoration: none;
-    text-transform: uppercase;
-    font-style: none;
     font-size: 12px;
     color: #fff;
 }
@@ -998,6 +1023,11 @@ ul {
     text-decoration: none;
     color: #fff;
     border-bottom: 1px dotted #fff;
+}
+
+.footer-logo .contact-telephone .fa {
+    color: #fff;
+    margin-right: 5px;
 }
 
 /*------------------- media -------------------*/
