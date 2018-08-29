@@ -184,7 +184,7 @@ ul {
 .arrow-down {
     width: 50px;
     height: 50px;
-    background-color: #fff;
+    background-color: #6c6f72;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -198,6 +198,20 @@ ul {
 	transition: 0.6s;
 }
 
+.main-arrow {
+    display: flex;
+    justify-content: center;
+}
+
+.main-arrow .fa {
+    color: #069C51;
+}
+
+.main-arrow .fa:hover {
+    color: #069C51;
+    transform: scale(1.2);
+    transition: 0.3s;
+}
 
 /*------------------- о нас -------------------*/
 
@@ -215,7 +229,7 @@ ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    /*align-items: center;*/
     
     max-width: 1200px;
     min-width: 768px;
@@ -786,7 +800,8 @@ ul {
 	flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 35px;
+    margin-bottom: 70px;
+    padding: 0 60px;
 }
 
 .customers-logo img {
@@ -878,6 +893,7 @@ ul {
     text-align: center;
     font-weight: 300;
     border-top: 4px solid #069C51;
+    border-bottom: 2px solid #069C51;
     background-color: #f7f7f7;
     padding: 50px 10px;
     width: 100%;
@@ -929,10 +945,12 @@ ul {
 }
 
 .btn-style:hover {
-    background: #069C51;
-    color: #fff;
-    transition: 0.4s;
-    cursor: pointer;
+    background: rgb(8, 179, 93);
+}
+
+.btn-style:active,
+.btn-style:focus {
+    background: rgb(8, 179, 93);
 }
 
 
@@ -982,14 +1000,19 @@ ul {
     flex-direction: column;
 }
 
-.footer-menu ul li {
+.footer-menu ul li{
     margin: 5px;
+
 }
 
 .footer-menu ul li a {
     text-decoration: none;
     font-size: 12px;
     color: #fff;
+}
+
+.footer-menu ul li a:hover {
+    opacity: 0.8;
 }
 
 .footer-logo .contact-telephone span {
