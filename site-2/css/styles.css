@@ -939,7 +939,7 @@ ul {
 /*------------------- footer -------------------*/
 
 .footer-content {
-    background-color: #40464b;
+    background-color: #757779;
   
     display: flex;
     flex-direction: column;
@@ -957,12 +957,15 @@ ul {
     
 }
 
-.footer-first-floor {
+.footer-first-floor,
+.footer-second-floor {
+    width: 1180px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    margin-bottom: 20px;
 }
 
 .footer-logo svg {
@@ -993,19 +996,19 @@ ul {
     color: #fff;
 }
 
+/*
 .footer-first-floor::after {
     display: block;
     content: '';
     width: 1200px;
-    height: 2px;
+    height: 0px;
     margin: 5px 0;
-    background-color: #fff;
-}
+    background-color: rgb(148, 148, 148);
+}*/
 
 .footer-second-floor {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    padding-top: 30px;
+    border-top: 1px solid #9d9d9e;
 }
 
 .footer-second-floor div p {
