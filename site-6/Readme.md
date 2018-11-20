@@ -1,6 +1,6 @@
 * Проект выполен и защищён в рамках курса: [HTML и CSS, уровень 2](https://htmlacademy.ru/intensive/adaptive).
 
-#### 1. Проект "Sedona"
+#### 1. Проект "Mishka"
 
 <a href="https://niksvhvets.github.io/site-6/">
   <img src="img/Screenshot_1.jpg" width="1150" height="608">
