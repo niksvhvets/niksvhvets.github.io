@@ -1,4 +1,4 @@
-#### 1. Проект "Blueasy"
+#### 1. Проект "Grand Canyon"
 
 <a href="https://niksvhvets.github.io/site-5/">
   <img src="img/Screenshot.jpg" width="1200" height="508">
