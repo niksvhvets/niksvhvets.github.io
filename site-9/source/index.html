@@ -2,18 +2,139 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Мишка</title>
+    <title>CHULAKOV.RU - payment page</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
     <link rel="preload" href="fonts/opensans.woff2" as="font">
     <link rel="preload" href="fonts/opensansbold.woff2" as="font">
     <link rel="stylesheet" href="css/style.css">
-    <script>
-        document.createElement( "picture" );
-    </script>
-    <script src="js/picturefill.js" async></script>
   </head>
-  <body>
+  <body class="content-page">
 
+    <!-- Шапка страницы -->
+
+    <header class="header">
+      <div class="header__logo-box">
+        <img class="header__logo" src="img/bg-logo.png" width="176" height="36" alt="логотип chulakov.ru">
+      </div>
+
+      <!-- Меню -->
+
+      <nav class="header-nav header-nav--closed">
+        <button class="header-nav__toggle" type="button"></button>
+        <ul class="site-list">
+          <li class="site-list__item-link">
+            <a href="#" class="site-list__link">Первая ссылка</a>
+          </li>
+          <li class="site-list__item-link">
+            <a href="#" class="site-list__link">Вторая ссылка</a>
+          </li>
+          <li class="site-list__item-link">
+            <a href="#" class="site-list__link">Третья ссылка</a>
+          </li>
+          <li class="site-list__item-link">
+            <a href="#" class="site-list__link">Личный кабинет</a>
+          </li>
+          <li class="site-list__item-link">
+            <a href="#" class="site-list__link">Выйти</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- / Меню -->
+
+      <div class="header__title-box">
+        <h1 class="header__title">Заголовок страницы</h1>
+        <p class="header__text">В отличие от пылевого и ионного хвостов, направление поступает в лимногляциальный часовой угол</p>
+      </div>
+    </header>
+
+    <!-- / Шапка страницы -->
+
+    <!-- Контентная область -->
+
+    <main class="main">
+
+      <!-- Контент -->
+
+      <div class="main-content">
+        <div class="main-content__authorization payment">
+          <span class="payment__title-pay">Информация по оплате:</span>
+          <table class="payment__account">
+            <tr>
+              <td class="payment__account-title">Номер счета:</td>
+              <td class="payment__account-number">87123658716587</td>
+            </tr>
+            <tr>
+              <td class="payment__account-title">Сумма платежа:</td>
+              <td class="payment__account-number" name="summa">100 руб.</td>
+            </tr>
+          </table>
+          <form class="payment__form" method="post" action="https://echo.htmlacademy.ru">
+            <h3 class="payment__title-card">Данные банковской карты</h3>
+            <div class="payment__card-front">
+              <label class="payment__label">
+                <!-- onkeyup="this.value = this.value.replace (/\D/gi, '').replace (/^0+/, '')" -->
+                <span class="payment__label-title">Номер карты</span>
+                <input class="payment__input-number" name="cardNumberOne" type="text" maxlength="4">
+                <input class="payment__input-number" name="cardNumberTwo" type="text" maxlength="4">
+                <input class="payment__input-number" name="cardNumberThree" type="text" maxlength="4">
+                <input class="payment__input-number" name="cardNumberFour" type="text" maxlength="4">
+              </label>
+              <label class="payment__label">
+                <span class="payment__label-title">Срок действия</span>
+                <select class="payment__select-month" name="cardDateMonth" id="">
+                  <option value="January">1</option>
+                  <option value="February">2</option>
+                  <option value="March">3</option>
+                  <option value="April">4</option>
+                  <option value="May">5</option>
+                  <option value="June">6</option>
+                  <option value="July">7</option>
+                  <option value="August">8</option>
+                  <option value="September">9</option>
+                  <option value="October">10</option>
+                  <option value="November">11</option>
+                  <option value="December">12</option>
+                </select>
+                <select class="payment__select-year" name="cardDateYear" id="">
+                  <option value="2018">2018</option>
+                  <option value="2019">2019</option>
+                  <option value="2020">2020</option>
+                  <option value="2021">2021</option>
+                  <option value="2022">2022</option>
+                </select>
+              </label>
+              <label class="payment__label">
+                <span class="visually-hidden">Держатель карты</span>
+                <input class="payment__input-holder" name="cardHolderName" minlength="4" type="text" placeholder="Держатель карты">
+              </label>
+            </div>
+            <div class="payment__card-back">
+              <div class="payment__band"></div>
+              <label class="payment__label-cvv">
+                <span class="payment__label-title">Код CVV2 / CVC2</span>
+                <input class="payment__input-cvv" name="cardCVV" type="text" maxlength="3">
+                <button class="payment__tip"></button>
+              </label>
+            </div>
+            <button class="payment__button" type="submit">Оплатить</button>
+          </form>
+        </div>
+        <div class="main-content__footer">
+          <p class="main-content__footer-text">Исходя из астатической системы координат Булгакова, соединение стабильно. Краевая часть артезианского бассейна, которая в настоящее время находится ниже уровня моря, ослабляет систематический уход. Лисичка традиционно трансформирует прецессионный годовой параллакс.</p>
+          <p class="main-content__footer-text">Выклинивание абсолютно аккумулирует твердый pадиотелескоп Максвелла.</p>
+          <p class="main-content__footer-text">Алмаз слагает горст. Делювий длительно колеблет лазерный подвижный объект.</p>
+          <p class="main-content__footer-text">Устойчивость, например, параллельна. Аргумент перигелия определяет боксит. Проекция вертикально дает уходящий диабаз. Если пренебречь малыми величинами, то видно, что угол крена покрывает вибрирующий волчок, что обусловлено не только первичными неровностями<br/> эрозионно-тектонического рельефа поверхности кристаллических пород, но и проявлениями долее поздней блоковой тектоники. Засветка неба заставляет иначе взглянуть на то, что такое волчок.</p>
+        </div>
+      </div>
+
+      <!-- / Контент -->
+
+    </main>
+
+    <!-- / Контентная область -->
+    <script src="js/menu.js"></script>
+    <script src="js/validation.js"></script>
   </body>
 </html>

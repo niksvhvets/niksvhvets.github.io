@@ -1,0 +1,435 @@
+.payment {
+  min-height: 569px;
+  background-color: #f7f8f8;
+  padding-top: 47px;
+  padding-right: 46px;
+  padding-bottom: 50px;
+  padding-left: 28px;
+}
+
+.payment__title-pay {
+  display: block;
+  font-size: 16px;
+  line-height: 21px;
+  color: #8494ab;
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+
+.payment__account {
+  margin-left: -2px;
+  margin-bottom: 36px;
+}
+
+.payment__account-title {
+  font-size: 16px;
+  line-height: 21px;
+  color: #8494ab;
+  font-weight: 400;
+  padding-right: 41px;
+}
+
+.payment__account-number {
+  font-size: 16px;
+  line-height: 21px;
+  color: #000000;
+  font-weight: 400;
+}
+
+.payment__form {
+  position: relative;
+}
+
+.payment__title-card {
+  font-size: 22px;
+  line-height: 26px;
+  color: #383d43;
+  margin-bottom: 21px;
+}
+
+.payment__card-front {
+  position: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #f7f8f8;
+  border: 1px solid #e4e9ee;
+  border-radius: 10px;
+  width: 350px;
+  z-index: 9999;
+}
+
+.payment__label {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.payment__label:nth-child(1) {
+  padding-top: 25px;
+  padding-left: 15px;
+}
+
+.payment__label:nth-child(2) {
+  padding-top: 17px;
+  padding-left: 15px;
+}
+
+.payment__label:nth-child(3) {
+  padding: 12px 16px 14px 15px;
+}
+
+.payment__label-title {
+  width: 100%;
+  font-size: 16px;
+  line-height: 21px;
+  color: #8494ab;
+  font-weight: 400;
+  padding-bottom: 6px;
+}
+
+.payment__input-number {
+  width: 52px;
+  height: 42px;
+  background-color: #ffffff;
+  border: 1px solid #e4e9ee;
+  margin-right: 9px;
+  font-size: 16px;
+  line-height: 21px;
+  color: #bec6cf;
+  padding-left: 12px;
+}
+
+.payment__input-date {
+  background-color: #ffffff;
+  border: 1px solid #e4e9ee;
+  margin-right: 9px;
+  font-size: 16px;
+  line-height: 21px;
+  color: #bec6cf;
+  padding-left: 12px;
+}
+
+.payment__select-month {
+  width: 70px;
+  height: 42px;
+  font-size: 16px;
+  line-height: 21px;
+  color: #000000;
+  border: 1px solid #e4e9ee;
+  padding-left: 12px;
+}
+
+.payment__select-year {
+  width: 86px;
+  height: 42px;
+  font-size: 16px;
+  line-height: 21px;
+  color: #000000;
+  border: 1px solid #e4e9ee;
+  padding-left: 12px;
+  margin-left: 12px;
+}
+
+.payment__input-holder {
+  background-color: #ffffff;
+  border: 1px solid #e4e9ee;
+  width: 305px;
+  height: 42px;
+  font-size: 16px;
+  line-height: 21px;
+  color: #bec6cf;
+  padding-left: 12px;
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: 21px;
+    color: #bec6cf;
+  }
+}
+
+.payment__card-back {
+  position: absolute;
+  top: 66px;
+  left: 198px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  background-color: #f7f8f8;
+  border: 1px solid #e4e9ee;
+  border-radius: 10px;
+  width: 370px;
+  z-index: 1;
+}
+
+.payment__band {
+  width: 100%;
+  height: 42px;
+  margin-top: 26px;
+  background-color: #e4e9ee;
+}
+
+.payment__label-cvv {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 151px;
+  padding-top: 19px;
+  padding-right: 15px;
+  padding-bottom: 100px;
+}
+
+.payment__input-cvv {
+  background-color: #ffffff;
+  border: 1px solid #e4e9ee;
+  width: 138px;
+  height: 42px;
+  font-size: 16px;
+  line-height: 21px;
+  color: #bec6cf;
+  padding-left: 12px;
+}
+
+.payment__tip {
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  top: 55px;
+  right: 21px;
+  background-image: url("../../img/tip.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: transparent;
+  width: 26px;
+  height: 26px;
+  border: 0;
+  padding: 0;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:focus,
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+.payment__card-back .payment__label {
+  width: 160px;
+}
+
+.payment__button {
+  cursor: pointer;
+  margin-top: 35px;
+  width: 173px;
+  height: 40px;
+  border: 0;
+  border-radius: 3px;
+  background-color: #9ec500;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 700;
+
+  &:hover {
+    opacity: 0.9;
+  }
+
+  &:focus,
+  &:active {
+    opacity: 0.7;
+  }
+}
+
+@media (max-width: 960px) {
+  .payment__card-front {
+    position: static;
+    margin-bottom: 20px;
+  }
+
+  .payment__card-back {
+    position: static;
+    width: 352px;
+    height: 262px;
+    background-image: url("../../img/kurlik.png");
+    background-size: 100px 100px;
+    background-repeat: no-repeat;
+    background-position-x: 33px;
+    background-position-y: 85px;
+  }
+
+  .payment__label-cvv {
+    padding-bottom: 81px;
+    &:after {
+      content: "Kurlik BANK";
+      position: absolute;
+      color: #bec6cf;
+      left: -150px;
+      top: 110px;
+    }
+  }
+
+  .payment__tip {
+    top: 60px;
+  }
+
+  .payment__button {
+    width: 173px;
+  }
+}
+
+@media (max-width: 768px) {
+  .payment {
+    padding-right: 28px;
+  }
+
+  .payment__card-front {
+    width: 100%;
+    background-image: url("../../img/kurlik.png");
+    background-size: 200px 330px;
+    background-repeat: no-repeat;
+    background-position-x: 325px;
+    background-position-y: 10px;
+  }
+
+  .payment__card-back {
+    width: 100%;
+    background-position-x: 80px;
+  }
+
+  .payment__label-cvv {
+    &:after {
+      left: -180px;
+      top: 120px;
+    }
+  }
+
+  .payment__band {
+    width: 100%;
+    height: 42px;
+    margin-top: 26px;
+    background-color: #e4e9ee;
+  }
+
+  .payment__label-cvv {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 151px;
+    padding-top: 19px;
+    padding-right: 15px;
+    padding-bottom: 100px;
+  }
+
+  .payment__input-cvv {
+    background-color: #ffffff;
+    border: 1px solid #e4e9ee;
+    width: 138px;
+    height: 42px;
+    font-size: 16px;
+    line-height: 21px;
+    color: #bec6cf;
+    padding-left: 12px;
+  }
+
+  .payment__label-cvv {
+    padding-bottom: 81px;
+    &:after {
+      content: "Kurlik BANK";
+      position: absolute;
+      color: #bec6cf;
+      left: -180px;
+      top: 110px;
+    }
+  }
+
+  .payment__tip {
+    top: 60px;
+  }
+
+  .payment__card-back .payment__label {
+    width: 160px;
+  }
+
+  .payment__button {
+    cursor: pointer;
+    margin-top: 35px;
+    width: 100%;
+    height: 40px;
+    border: 0;
+    border-radius: 3px;
+    background-color: #9ec500;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 700;
+
+    &:hover {
+      opacity: 0.9;
+    }
+
+    &:focus,
+    &:active {
+      opacity: 0.7;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .payment {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .payment__account-title {
+    padding-right: 20px;
+  }
+
+  .payment__title-card {
+    font-size: 20px;
+  }
+
+  .payment__card-front {
+    background-size: 200px 300px;
+    background-position-x: 188px;
+    background-position-y: 105px;
+  }
+
+  .payment__card-back {
+    width: 100%;
+    background-position-x: 80px;
+  }
+
+  .payment__label-cvv {
+    &:after {
+      left: -122px;
+      top: 110px;
+    }
+  }
+
+  .payment__band {
+    width: 100%;
+    height: 42px;
+    margin-top: 26px;
+    background-color: #e4e9ee;
+  }
+
+  .payment__input-number {
+    width: 48px;
+    margin-right: 8px;
+  }
+
+  .payment__input-holder {
+    width: 258px;
+  }
+
+  .payment__card-back {
+    width: 100%;
+    background-position-x: 14px;
+  }
+}
