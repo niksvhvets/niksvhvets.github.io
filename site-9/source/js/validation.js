@@ -43,4 +43,3 @@ form.addEventListener("submit", function (event) {
   validationForm(cardCvvArray, matchNumber, minSymbolsCvv, inputNumberLetterAlert, inputNUmberFullAlert, event);
   validationForm(cardHolderArray, matchLetter, minSymbolsInput, inputHolderLatinAlert, inputHolderLatinMin, event);
 });
-

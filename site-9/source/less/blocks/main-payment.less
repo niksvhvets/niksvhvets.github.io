@@ -41,6 +41,7 @@
 }
 
 .payment__title-card {
+  font-family: Custom-font;
   font-size: 22px;
   line-height: 26px;
   color: #383d43;
@@ -81,12 +82,33 @@
 }
 
 .payment__label-title {
+  display: block;
   width: 100%;
   font-size: 16px;
   line-height: 21px;
   color: #8494ab;
   font-weight: 400;
   padding-bottom: 6px;
+}
+
+.payment__select-arrow {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/arrow.png");
+    top: 17px;
+    right: 10px;
+    width: 16px;
+    height: 8px;
+    z-index: 1;
+    pointer-events: none;
+  }
+}
+
+.payment__select-arrow:first-of-type {
+  margin-right: 12px;
 }
 
 .payment__input-number {
@@ -97,7 +119,7 @@
   margin-right: 9px;
   font-size: 16px;
   line-height: 21px;
-  color: #bec6cf;
+  color: #000000;
   padding-left: 12px;
 }
 
@@ -107,7 +129,7 @@
   margin-right: 9px;
   font-size: 16px;
   line-height: 21px;
-  color: #bec6cf;
+  color: #000000;
   padding-left: 12px;
 }
 
@@ -119,6 +141,7 @@
   color: #000000;
   border: 1px solid #e4e9ee;
   padding-left: 12px;
+  appearance: none;
 }
 
 .payment__select-year {
@@ -129,20 +152,27 @@
   color: #000000;
   border: 1px solid #e4e9ee;
   padding-left: 12px;
-  margin-left: 12px;
+  appearance: none;
 }
 
 .payment__input-holder {
   background-color: #ffffff;
   border: 1px solid #e4e9ee;
   width: 305px;
-  height: 42px;
+
   font-size: 16px;
   line-height: 21px;
-  color: #bec6cf;
+  color: #000000;
   padding-left: 12px;
+  padding-top: 13px;
+  padding-bottom: 12px;
+
+  &:-ms-input-placeholder {
+    color: #bec6cf;
+  }
 
   &::placeholder {
+    display: block;
     font-size: 16px;
     line-height: 21px;
     color: #bec6cf;
@@ -189,7 +219,7 @@
   height: 42px;
   font-size: 16px;
   line-height: 21px;
-  color: #bec6cf;
+  color: #000000;
   padding-left: 12px;
 }
 
@@ -199,7 +229,7 @@
   position: absolute;
   top: 55px;
   right: 21px;
-  background-image: url("../../img/tip.png");
+  background-image: url("../img/tip.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: transparent;
@@ -255,7 +285,7 @@
     position: static;
     width: 352px;
     height: 262px;
-    background-image: url("../../img/kurlik.png");
+    background-image: url("../img/kurlik.png");
     background-size: 100px 100px;
     background-repeat: no-repeat;
     background-position-x: 33px;
@@ -264,7 +294,8 @@
 
   .payment__label-cvv {
     padding-bottom: 81px;
-    &:after {
+
+    &::after {
       content: "Kurlik BANK";
       position: absolute;
       color: #bec6cf;
@@ -289,7 +320,7 @@
 
   .payment__card-front {
     width: 100%;
-    background-image: url("../../img/kurlik.png");
+    background-image: url("../img/kurlik.png");
     background-size: 200px 330px;
     background-repeat: no-repeat;
     background-position-x: 325px;
@@ -299,13 +330,6 @@
   .payment__card-back {
     width: 100%;
     background-position-x: 80px;
-  }
-
-  .payment__label-cvv {
-    &:after {
-      left: -180px;
-      top: 120px;
-    }
   }
 
   .payment__band {
@@ -323,7 +347,15 @@
     width: 151px;
     padding-top: 19px;
     padding-right: 15px;
-    padding-bottom: 100px;
+    padding-bottom: 81px;
+
+    &::after {
+      content: "Kurlik BANK";
+      position: absolute;
+      color: #bec6cf;
+      left: -180px;
+      top: 110px;
+    }
   }
 
   .payment__input-cvv {
@@ -335,17 +367,6 @@
     line-height: 21px;
     color: #bec6cf;
     padding-left: 12px;
-  }
-
-  .payment__label-cvv {
-    padding-bottom: 81px;
-    &:after {
-      content: "Kurlik BANK";
-      position: absolute;
-      color: #bec6cf;
-      left: -180px;
-      top: 110px;
-    }
   }
 
   .payment__tip {
@@ -402,11 +423,11 @@
 
   .payment__card-back {
     width: 100%;
-    background-position-x: 80px;
+    background-position-x: 12px;
   }
 
   .payment__label-cvv {
-    &:after {
+    &::after {
       left: -122px;
       top: 110px;
     }
@@ -426,10 +447,5 @@
 
   .payment__input-holder {
     width: 258px;
-  }
-
-  .payment__card-back {
-    width: 100%;
-    background-position-x: 14px;
   }
 }

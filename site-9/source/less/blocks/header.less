@@ -9,7 +9,7 @@
 
 .header__logo-box {
   background-color: #1f2229;
-  width: 322px;
+  width: 321px;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -23,7 +23,7 @@
 }
 
 .header-nav__toggle {
- display: none;
+  display: none;
 }
 
 .header__logo {
@@ -32,7 +32,7 @@
 
 .header__title-box {
   background-color: #00aeef;
-  width: 641px;
+  width: 639px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -41,6 +41,7 @@
 }
 
 .header__title {
+  font-family: Custom-font, "Open Sans";
   font-size: 35px;
   line-height: 22px;
   color: #193945;
@@ -49,12 +50,15 @@
 }
 
 .header__text {
+  width: 453px;
+  word-wrap: break-word;
   font-size: 14px;
   line-height: 20px;
   color: #193945;
   margin-right: 149px;
   margin-left: 29px;
   font-weight: 400;
+  padding-bottom: 28px;
 }
 
 @media (max-width: 959px) {
@@ -109,7 +113,7 @@
   .header-nav--opened .header-nav__toggle {
     display: block;
     position: absolute;
-    background-image: url("../../img/icon-menu-close.svg");
+    background-image: url("../img/icon-menu-close.svg");
     background-color: transparent;
     background-repeat: no-repeat;
     background-size: contain;
@@ -124,7 +128,7 @@
   .header-nav--closed .header-nav__toggle {
     display: block;
     position: absolute;
-    background-image: url("../../img/icon-menu-open.svg");
+    background-image: url("../img/icon-menu-open.svg");
     background-color: transparent;
     width: 32px;
     height: 32px;
@@ -148,6 +152,7 @@
   }
 
   .header__text {
+    width: 391px;
     margin-right: 60px;
     margin-bottom: 30px;
   }
@@ -164,6 +169,7 @@
   }
 
   .header__text {
+    width: 300px;
     margin-left: 10px;
     margin-right: 10px;
   }

@@ -5,8 +5,7 @@
     <title>CHULAKOV.RU - payment page</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
-    <link rel="preload" href="fonts/opensans.woff2" as="font">
-    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+    <link rel="preload" href="fonts/OpenSans-Bold.ttf" as="font">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="content-page">
@@ -83,27 +82,31 @@
               </label>
               <label class="payment__label">
                 <span class="payment__label-title">Срок действия</span>
-                <select class="payment__select-month" name="cardDateMonth" id="">
-                  <option value="January">1</option>
-                  <option value="February">2</option>
-                  <option value="March">3</option>
-                  <option value="April">4</option>
-                  <option value="May">5</option>
-                  <option value="June">6</option>
-                  <option value="July">7</option>
-                  <option value="August">8</option>
-                  <option value="September">9</option>
-                  <option value="October">10</option>
-                  <option value="November">11</option>
-                  <option value="December">12</option>
-                </select>
-                <select class="payment__select-year" name="cardDateYear" id="">
-                  <option value="2018">2018</option>
-                  <option value="2019">2019</option>
-                  <option value="2020">2020</option>
-                  <option value="2021">2021</option>
-                  <option value="2022">2022</option>
-                </select>
+                <div class="payment__select-arrow">
+                  <select class="payment__select-month" name="cardDateMonth" id="">
+                    <option value="January">1</option>
+                    <option value="February">2</option>
+                    <option value="March">3</option>
+                    <option value="April">4</option>
+                    <option value="May">5</option>
+                    <option value="June">6</option>
+                    <option value="July">7</option>
+                    <option value="August">8</option>
+                    <option value="September">9</option>
+                    <option value="October">10</option>
+                    <option value="November">11</option>
+                    <option value="December">12</option>
+                  </select>
+                </div>
+                <div class="payment__select-arrow">
+                  <select class="payment__select-year" name="cardDateYear" id="">
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                  </select>
+                </div>
               </label>
               <label class="payment__label">
                 <span class="visually-hidden">Держатель карты</span>
