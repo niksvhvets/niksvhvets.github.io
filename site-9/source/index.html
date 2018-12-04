@@ -69,11 +69,13 @@
               <td class="payment__account-number" name="summa">100 руб.</td>
             </tr>
           </table>
+
+          <!-- Форма валидации -->
+
           <form class="payment__form" method="post" action="https://echo.htmlacademy.ru">
             <h3 class="payment__title-card">Данные банковской карты</h3>
             <div class="payment__card-front">
               <label class="payment__label">
-                <!-- onkeyup="this.value = this.value.replace (/\D/gi, '').replace (/^0+/, '')" -->
                 <span class="payment__label-title">Номер карты</span>
                 <input class="payment__input-number" name="cardNumberOne" type="text" maxlength="4">
                 <input class="payment__input-number" name="cardNumberTwo" type="text" maxlength="4">
@@ -123,13 +125,22 @@
             </div>
             <button class="payment__button" type="submit">Оплатить</button>
           </form>
+
+          <!-- / Форма валидации -->
+
         </div>
+
+        <!-- Подвал контента -->
+
         <div class="main-content__footer">
           <p class="main-content__footer-text">Исходя из астатической системы координат Булгакова, соединение стабильно. Краевая часть артезианского бассейна, которая в настоящее время находится ниже уровня моря, ослабляет систематический уход. Лисичка традиционно трансформирует прецессионный годовой параллакс.</p>
           <p class="main-content__footer-text">Выклинивание абсолютно аккумулирует твердый pадиотелескоп Максвелла.</p>
           <p class="main-content__footer-text">Алмаз слагает горст. Делювий длительно колеблет лазерный подвижный объект.</p>
           <p class="main-content__footer-text">Устойчивость, например, параллельна. Аргумент перигелия определяет боксит. Проекция вертикально дает уходящий диабаз. Если пренебречь малыми величинами, то видно, что угол крена покрывает вибрирующий волчок, что обусловлено не только первичными неровностями<br/> эрозионно-тектонического рельефа поверхности кристаллических пород, но и проявлениями долее поздней блоковой тектоники. Засветка неба заставляет иначе взглянуть на то, что такое волчок.</p>
         </div>
+
+        <!-- / Подвал контента -->
+
       </div>
 
       <!-- / Контент -->
@@ -137,7 +148,9 @@
     </main>
 
     <!-- / Контентная область -->
-    <script src="js/menu.js"></script>
-    <script src="js/validation.js"></script>
+
+    <script src="js/menu.js"></script>          <!-- скрипт открытия/закрытия меня в мобильных версиях -->
+    <script src="js/validation.js"></script>    <!-- скрипт валидации формы оплаты -->
+
   </body>
 </html>
