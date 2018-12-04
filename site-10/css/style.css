@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Arial", "Helvetica", "sans-serif";
+  font-family: "Arial", "Helvetica", sans-serif;
   background-color: white;
   font-weight: 700;
   font-size: 17px;
@@ -115,7 +115,7 @@ select::-ms-expand {
           order: 3;
 }
 .header__title {
-  font-family: Custom-font, "Open Sans";
+  font-family: "Custom-font", "Open Sans", sans-serif;
   font-size: 35px;
   line-height: 22px;
   color: #193945;
@@ -324,7 +324,7 @@ select::-ms-expand {
       -ms-flex-pack: center;
           justify-content: center;
   min-height: 75px;
-  font-family: Custom-font, "Open Sans";
+  font-family: "Custom-font", "Open Sans", sans-serif;
   font-size: 18px;
   line-height: 70px;
   color: #ffffff;
@@ -471,7 +471,7 @@ select::-ms-expand {
   position: relative;
 }
 .payment__title-card {
-  font-family: Custom-font;
+  font-family: "Custom-font", "Open Sans", sans-serif;
   font-size: 22px;
   line-height: 26px;
   color: #383d43;
@@ -499,15 +499,7 @@ select::-ms-expand {
   z-index: 9999;
 }
 .payment__label {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  border: 0;
 }
 .payment__label:nth-child(1) {
   padding-top: 25px;
@@ -536,7 +528,7 @@ select::-ms-expand {
   content: "";
   position: absolute;
   background-image: url("../img/arrow.png");
-  top: 17px;
+  top: 7px;
   right: 10px;
   width: 16px;
   height: 8px;
@@ -551,7 +543,7 @@ select::-ms-expand {
   height: 42px;
   background-color: #ffffff;
   border: 1px solid #e4e9ee;
-  margin-right: 9px;
+  margin-right: 2px;
   font-size: 16px;
   line-height: 21px;
   color: #000000;
@@ -867,7 +859,7 @@ select::-ms-expand {
   }
   .payment__input-number {
     width: 48px;
-    margin-right: 8px;
+    margin-right: 0;
   }
   .payment__input-holder {
     width: 258px;

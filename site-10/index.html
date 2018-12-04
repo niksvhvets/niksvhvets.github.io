@@ -66,7 +66,7 @@
             </tr>
             <tr>
               <td class="payment__account-title">Сумма платежа:</td>
-              <td class="payment__account-number" name="summa">100 руб.</td>
+              <td class="payment__account-number">100 руб.</td>
             </tr>
           </table>
 
@@ -75,17 +75,17 @@
           <form class="payment__form" method="post" action="https://echo.htmlacademy.ru">
             <h3 class="payment__title-card">Данные банковской карты</h3>
             <div class="payment__card-front">
-              <label class="payment__label">
+              <fieldset class="payment__label">
                 <span class="payment__label-title">Номер карты</span>
                 <input class="payment__input-number" name="cardNumberOne" type="text" maxlength="4">
                 <input class="payment__input-number" name="cardNumberTwo" type="text" maxlength="4">
                 <input class="payment__input-number" name="cardNumberThree" type="text" maxlength="4">
                 <input class="payment__input-number" name="cardNumberFour" type="text" maxlength="4">
-              </label>
-              <label class="payment__label">
+              </fieldset>
+              <fieldset class="payment__label">
                 <span class="payment__label-title">Срок действия</span>
-                <div class="payment__select-arrow">
-                  <select class="payment__select-month" name="cardDateMonth" id="">
+                <span class="payment__select-arrow">
+                  <select class="payment__select-month" name="cardDateMonth">
                     <option value="January">1</option>
                     <option value="February">2</option>
                     <option value="March">3</option>
@@ -99,17 +99,17 @@
                     <option value="November">11</option>
                     <option value="December">12</option>
                   </select>
-                </div>
-                <div class="payment__select-arrow">
-                  <select class="payment__select-year" name="cardDateYear" id="">
+                </span>
+                <span class="payment__select-arrow">
+                  <select class="payment__select-year" name="cardDateYear">
                     <option value="2018">2018</option>
                     <option value="2019">2019</option>
                     <option value="2020">2020</option>
                     <option value="2021">2021</option>
                     <option value="2022">2022</option>
                   </select>
-                </div>
-              </label>
+                </span>
+              </fieldset>
               <label class="payment__label">
                 <span class="visually-hidden">Держатель карты</span>
                 <input class="payment__input-holder" name="cardHolderName" minlength="4" type="text" placeholder="Держатель карты">
@@ -120,7 +120,7 @@
               <label class="payment__label-cvv">
                 <span class="payment__label-title">Код CVV2 / CVC2</span>
                 <input class="payment__input-cvv" name="cardCVV" type="text" maxlength="3">
-                <button class="payment__tip"></button>
+                <a href="#" class="payment__tip"></a>
               </label>
             </div>
             <button class="payment__button" type="submit">Оплатить</button>
