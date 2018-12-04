@@ -3,7 +3,7 @@
 #### 1. Тестовое задание
 
 <a href="https://niksvhvets.github.io/site-10/">
-  <img src="img/Screenshot.jpg" width="1200" height="408">
+  <img src="img/Screenshot.jpg" width="997" height="508">
 </a>
 
 Сборка проекта 
@@ -14,9 +14,9 @@
 
 1. [Вёрстка главной страницы сайта](https://niksvhvets.github.io/site-10/)
 
-bem-validate index.html - OK
-npm test - OK
-https://validator.w3.org/ - OK
+bem-validate index.html - <b>OK</b><br>
+npm test - <b>OK</b><br>
+https://validator.w3.org/ - <b>OK</b>
 
 #### 3. Общие технические требования
 
