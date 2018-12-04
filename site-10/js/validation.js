@@ -1,4 +1,4 @@
-var form = document.querySelector("form");
+var form = document.querySelector("form");                                             // получаем доступ к элементам с которым будем работать
 var paymentForm = document.querySelector(".payment__form");
 var paymentInputNumber = document.querySelector(".payment__input-number");
 var cardNumberOne = paymentForm.querySelector("[name=cardNumberOne]");
@@ -12,8 +12,8 @@ var cardNumberArray = [cardNumberOne, cardNumberTwo, cardNumberThree, cardNumber
 var cardCvvArray = [cardCVV];                                                           // будем работать с массивами, так как input`ов для номера карты всего 4
 var cardHolderArray = [cardHolderName];                                                 // и чтобы не вызывать функцию с одинаковыми аргументами 4 раза, будет перебирать input`ы в массивах
 
-var matchNumber = /[^0-9]/g;
-var matchLetter = /[^a-zA-Z]/g;
+var matchNumber = /[^0-9]/g;          // только цифры
+var matchLetter = /[^a-zA-Z]/g;       // только буквы
 var minSymbolsInput = 4;
 var minSymbolsCvv = 3;
 var inputNumberLetterAlert = "Вы вводите буквы в номер карты";
@@ -27,7 +27,7 @@ var validationForm = function (checkArray, numberOrLetter, minSymbols, alertOne,
       checkArray[i].value = checkArray[i].value.replace(numberOrLetter, '');            // если введены буквы или цифры, стереть их(в зависимости от условия)
       event.preventDefault();
       alert(alertOne);
-      checkArray[i].style.border = '1px solid red';
+      checkArray[i].style.border = '1px solid red';                                      // покрасить рамки поля ввода в красный
     } else if (checkArray[i].value === '' || checkArray[i].value.length < minSymbols) {  // если значение input пустое или меньше переданного параметра
       event.preventDefault();
       alert(alertTwo);
@@ -38,8 +38,8 @@ var validationForm = function (checkArray, numberOrLetter, minSymbols, alertOne,
   };
 }
 
-form.addEventListener("submit", function (event) {
-  validationForm(cardNumberArray, matchNumber, minSymbolsInput, inputNumberLetterAlert, inputNUmberFullAlert, event);
+form.addEventListener("submit", function (event) {                                       // отслеживаем клик по кнопке подверждения оплаты
+  validationForm(cardNumberArray, matchNumber, minSymbolsInput, inputNumberLetterAlert, inputNUmberFullAlert, event);   // вызываем нашу функцию с аргументами для проверки всех полей input
   validationForm(cardCvvArray, matchNumber, minSymbolsCvv, inputNumberLetterAlert, inputNUmberFullAlert, event);
   validationForm(cardHolderArray, matchLetter, minSymbolsInput, inputHolderLatinAlert, inputHolderLatinMin, event);
 });
