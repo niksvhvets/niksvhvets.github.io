@@ -23,6 +23,7 @@ https://validator.w3.org/ - <b>OK</b>
  3. Препроцессор LESS
  4. Сборщик Gulp
  5. Кроссбраузерная верстка : IE 10+, Safari, Opera, Firefox, Edge, Chrome
+ 6. БЭМ
 
 #### 3. Общие технические требования
 
