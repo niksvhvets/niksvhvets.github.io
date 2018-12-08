@@ -1,0 +1,128 @@
+.site-list {
+
+  height: max-content;
+  background-color: #1f2229;
+  order: 2;
+}
+
+.site-list__item-link {
+  width: 321px;
+}
+
+.site-list__link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  min-height: 75px;
+  font-family: "Custom-font", "Open Sans", sans-serif;
+  font-size: 18px;
+  line-height: 70px;
+  color: #ffffff;
+  padding-left: 28px;
+
+  &:hover {
+    color: #808592;
+  }
+
+  &:focus,
+  &:active {
+    color: #808592;
+    background-color: #2a2d37;
+  }
+}
+
+.site-list__item-link:first-child {
+  border-top: 1px solid #20232b;
+}
+
+.site-list__item-link:not(:last-child) {
+  border-bottom: 1px solid #20232b;
+}
+
+@media (max-width: 959px) {
+  .site-list {
+
+    height: max-content;
+    background-color: #1f2229;
+  }
+
+  .site-list__item-link {
+    width: 267px;
+  }
+
+  .site-list__link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    min-height: 75px;
+    font-size: 18px;
+    line-height: 24px;
+    color: #ffffff;
+    padding-left: 28px;
+
+    &:hover {
+      color: #808592;
+    }
+
+    &:focus,
+    &:active {
+      color: #808592;
+      background-color: #2a2d37;
+    }
+  }
+
+  .site-list__item-link:first-child {
+    border-top: 1px solid #20232b;
+  }
+
+  .site-list__item-link:not(:last-child) {
+    border-bottom: 1px solid #20232b;
+  }
+}
+
+@media (max-width: 767px) {
+  .site-list {
+    display: block;
+    position: static;
+    width: 100%;
+    height: max-content;
+    background-color: #1f2229;
+    order: 2;
+  }
+
+  .site-list__item-link {
+    width: 100%;
+  }
+
+  .site-list__link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    min-height: 75px;
+    font-size: 18px;
+    line-height: 24px;
+    color: #ffffff;
+    padding-left: 28px;
+
+    &:hover {
+      color: #808592;
+    }
+
+    &:focus,
+    &:active {
+      color: #808592;
+      background-color: #2a2d37;
+    }
+  }
+
+  .site-list__item-link:first-child {
+    border-top: 1px solid #20232b;
+  }
+
+  .site-list__item-link:not(:last-child) {
+    border-bottom: 1px solid #20232b;
+  }
+}
